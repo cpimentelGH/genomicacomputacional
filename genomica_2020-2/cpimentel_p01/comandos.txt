@@ -1,0 +1,160 @@
+# Comandos de la Práctica 01
+# Carlos Pimentel Ruíz
+
+# Parte I
+
+echo $SHELL
+
+mkdir data filtered raw_data meta scripts figures archive
+
+mv filtered data
+mv raw_data data
+
+Respuesta 4: La organización se debe a que todos los datos para un proyecto bioinformático deben estar acomodados para poder subirlos a un repositorio. Se genera un directorio principal que contiene los subdirectorios que en este caso son:
+archive: Este no se sube al repositorio pero almacena scripts y resultados que podrían tener utilidad después.
+
+meta: Almacena los metadatos (información detallada de las muestras) y cualquier otro documento para procesar los datos.
+
+scripts: subdirectorio obligatorio que almacena los scripts necesarios para correr el programa de inicio a fin.
+
+figures: almacena los códigos que se utilicen para hacer las figuras.
+
+data: funciona como un directorio que contiene otros directorios en los que se encuentran los distintos tipos de datos. En este caso tenemos dos directorios que son raw_data y filtered (datos crudos y procesados).
+
+Además de todo esto se debe generar un archivo de texto identificado como README que indique qué es qué y en dónde está cada cosa.
+
+# Parte II
+
+chmod u+x delay.sh
+
+ls -l
+
+#!/bin/bash
+echo "Después de la parte I. Necesito 1/2 minuto de descanso, que son exactamente 30 segundos."
+sleep 30
+echo "Ahora sí, con todo!"
+
+
+#!/bin/bash
+echo "Después de la parte I. Necesito 1/2 minuto de descanso, que son exactamente 30 segundos."
+sleep 300
+echo "Ahora sí, con todo!"
+
+./delay.sh &
+
+ps -ax | grep sleep 
+
+kill 12075 #o el PID correspondiente#
+
+# Parte III
+
+## Estructura molecular del SARS-CoV-2 ##
+
+La familia coronaviridae se compone de 3 géneros que son: Alphacoronavirus y Betacoronavirus que infectan mamíferos; Gammacoronavirus que infecta aves; y Deltacoronavirus que infecta a ambos. Esta familia se caracteriza por provocar enfermedades relacionadas al tracto respiratorio, gastrointestinales y sistema nervioso central. El SARS-CoV-2 pertenece al género Betacoronavirus.
+
+Este virus tiene un diámetro aproximado de 50-200 nm. Su material genético es una cadena de RNA de 27-32 Kb que está envuelta cápside de glicoproteínas, proteínas y espículas que son proteínas transmembranales (proteína S) que son reconocidas por los receptores de la Enzima convertidora de angiotensina 2 (ACE2) provacando la endocitosis del virus que posteriormente con ayuda de los proteosomas contenidos en los lisosomas se liberará su genoma.
+
+## Función de los ectodominios espículares del SARS-CoV-2 ##
+
+Ya se ha descrito la acción del virus en el punto anterior pero podemos generalizar al mencionar que estas espículas se unen al receptor de la célula hospedera mediante su subunidad S1 para luego fusionar su membrana con la de la célula hospedera con ayuda de la subunidad S2. La espícula se presenta en dos conformaciones estructurales distintas, prefusión y postfusión. 
+
+mv *.fasta ../Desktop/genomica_2020-2/cpimentel_p01/data/raw_data/
+
+mv *.fastq ../Desktop/genomica_2020-2/cpimentel_p01/data/raw_data/
+
+mv *.gff3 ../Desktop/genomica_2020-2/cpimentel_p01/data/raw_data/
+
+# Parte IV
+
+ln *.fasta ~/Desktop/genomica_2020-2/cpimentel_p01/data/filtered/
+
+ln *.fastq ~/Desktop/genomica_2020-2/cpimentel_p01/data/filtered/
+
+ln *.gff3 ~/Desktop/genomica_2020-2/cpimentel_p01/data/filtered/
+
+mkdir proteins
+
+mv sequence_*.fasta proteins/
+
+touch glycoproteins.faa 
+
+less sequence_1.fasta | head -2
+
+>pdb|6VYB|C Chain C, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+
+less sequence_2.fasta | head -2
+
+>pdb|6VYB|B Chain B, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+
+less sequence_3.fasta | head -2
+
+>pdb|6VYB|A Chain A, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+
+less sequence_1.fasta sequence_2.fasta sequence_3.fasta > glycoproteins.faa 
+
+less sequence.fasta | head -5 
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA
+CGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAAC
+TAATTACTGTCGTTGACAGGACACGAGTAACTCGTCTATCTTCTGCAGGCTGCTTACGGTTTCGTCCGTG
+TTGCAGCCGATCATCAGCACATCTAGGTTTCGTCCGGGTGTGACCGAAAGGTAAGATGGAGAGCCTTGTC
+
+less sra_data.fasta | head -5
+
+>SRR11241254.1.1 1 length=40
+GTTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAAC
+>SRR11241254.2.1 2 length=40
+GTTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAAC
+>SRR11241254.3.1 3 length=40
+
+less sequence.fasta | grep '>' | wc -l
+# Número de headers: 1 #
+
+less sra_data.fasta | grep '>' | wc -l
+# Número de headers: 131950 #
+
+less sra_data.fastq | head -12
+
+@SRR11241254.1.1 1 length=40
+GTTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAAC
++SRR11241254.1.1 1 length=40
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+@SRR11241254.2.1 2 length=40
+GTTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAAC
++SRR11241254.2.1 2 length=40
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+@SRR11241254.3.1 3 length=40
+GTTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAAC
++SRR11241254.3.1 3 length=40
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+
+less sra_data.fastq | grep + | wc -l
+# Número de secuencias: 133774 #
+
+Respuesta 8:
+.fasta: Las secuencias son representadas por nucleótidos y sólo presenta el ID de la secuencia.
+
+.fastq: también esta representada por nucleótidos y además del ID de las secuencias presenta puntajes de calidad. Una línea representan el ID de la secuencia, una más líneas contienen la secuencia, la línea que comienza con el símbolo + puede estar vacía o repetir el ID de la secuencia y por último una o más líneas que contienen los puntajes de calidad (quality scores). 
+
+.faa: es igual que un archivo fasta sólo que indica que proviene de NCBI y que está organizado en aminoácidos.
+
+Respuesta 9: si se utiliza less la información se presenta en filas, si se utiliza less -S la información se encuentra organizada en columnas.
+
+awk '$3 =="gene" {print $1, $3}' sequence.gff3 |wc -l
+# Presenta 11 genes #
+
+
+
+
+
+
+
+
+
+
+
+

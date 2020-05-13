@@ -8,29 +8,28 @@ ___
 1. Secuencia x para copiar y pegar en BLAST.
 
 ~~~
-
 >sequence_x
 AGAGTTTGATCCTGGCTCAGGATTAACGCTGGCGGCATGCCTAATACATGCAAGTCGATCGGAAGTAGCAATACTTTAGAGGCGAACGGGTGAGTAACACGTATCCAATCTACCTTATAATGGGGGATAACTAGTTGAAAAACTAGCTAATACCGCATAAGAACTTTAGTTCGCATGAATTAAAGTTGAAAGGACCTGCAAGGGTTCGTTATTTGATGAGGGTGCGCCATATCAGCTAGTTGGTAGGGTAATGGCCTACCAAGGCAATGACGTGTAGCTATGCTGAGAAGTAGAATAGCCACAATGGGACTGAGACACGGCCCATACTCCTACGGGAGGCAGCAGTAGGGAATTTTTCACAATGAGCGAAAGCTTGATGGAGCAATGCCGCGTGAACGATGAAGGTCTTTTTGATTGTAAAGTTCTTTTATTTGGGAAGAATGACTCTAGCAGGCAATGGCTGGAGTTTGACTGTACCACTTTGAATAAGTGACGACTAACTATGTGCCAGCAGTCGCGGTAATACATAGGTCGCAAGCGTTATCCGGATTTATTGGGCGTAAAGCAAGCGCAGGCGGATTGAAAAGTCTGGTGTTAAAGGCAGCTGCTTAACAGTTGTATGCATTGGAAACTATCAGTCTAGAGTGTGGTAGGGAGTTTTGGAATTTCATGTGGAGCGGTGAAATGCGTAGATATATGAAGGAACACCAGTGGCGAAGGCGAAAACTTAGGCCATTACTGACGCTTAGGCTTGAAAGTGTGGGGAGCAAATAGGATTAGATACCCTAGTAGTCCACACCGTAAACGATAGATACTAGCTGTCGGAGCGATCCCTTCGGTAGTGAAGTTAACACATTAAGTATCTCGCCTGGGTAGTACATTCGCAAGAATGAAACTCAAACGGAATTGACGGGGACCCGCACAAGTGGTGGAGCATGTTGCTTAATTCGACGGTACACGAAAAACCTTACCTAGACTTGACATCCTTGGCAAAGTTATGGAAACATAATGGAGGTTAACCGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCGTTAGTTACATTGTTTAACGAGACTGCTAATGTAAATTGGAGGAAGGAAGGGATGACGTCAAATCATCATGCCCCTTATGTCTAGGGCTGCAAACGTGCTACAATGGCCAATACAAACAGTAGCCAACTTGTAAAAGTGAGCAAATCTGAAAAGTTGGTCTCAGTTCGGATTGAGGGCTGCAATTCGTCCTCATGAAGCTGGAATCACTAGTAATCGCGAATCAGCTATGTCGCGGTGAATACGTTCTCGGGTCTTGTACACACCGCCCGTCAAACTATGAAAGCTGGTAATATTTAAAAACGTGTTGCTAACCTTTATTGGAAGCGCATGTCAAGGATAGCACCGGTGATTGGAGTTAAGTCGTAACAAGGTACCCCTACGAGAACG
-
 ~~~
 
 	1. ¿A qué organismo pertenece?
-		*Mycoplasma genitalium*
+		_Mycoplasma genitalium_
 
 	2. ¿Es un gen o una región genómica de importancia?
 		Gen ARNr 16S
 
 	3. ¿Qué es un marcador molecular?
-		Es un fragmento de DNA polimórfico (con variaciones) que permite distinguir entre diferentes grupos taxonómicos, poblaciones o individuos. Estos marcadores muchas veces son utilizados como estimadores de la historia evolutiva de los organismos ya que se evalúan relaciones filogenéticas en distintos niveles de organización.
+		Es un fragmento de DNA polimórfico (con variaciones) que permite distinguir entre diferentes grupos taxonómicos, poblaciones o individuos. Estos marcadores muchas veces son utilizados como 		estimadores de la historia evolutiva de los organismos ya que se evalúan relaciones filogenéticas en distintos niveles de organización.
 
 	4. ¿Cuál es la importancia de este tipo de marcador en particular?
-		El ARN ribosómico 16S (ARNr 16S) es utilizado en estudios de filogenia y taxonomía de bacterias ya que se encuentra altamente conservado, presentado regiones comunes en todos los organismos pero con variaciones en zonas específicas. 
+		El ARN ribosómico 16S (ARNr 16S) es utilizado en estudios de filogenia y taxonomía de bacterias ya que se encuentra altamente conservado, presentado regiones comunes en todos los 			organismos pero con variaciones en zonas específicas. 
 
-####Fuentes
+###Fuentes
 
 -Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso Mayo 13 2020].
 
 -del Rosario Rodicio, M. and del Carmen Mendoza, M., 2004. Identificación bacteriana mediante secuenciación del ARNr 16S: fundamento, metodología y aplicaciones en microbiología clínica. Enfermedades Infecciosas y Microbiología Clínica, [en línea] 22(4), pp.238-245. Disponible en: <https://www.elsevier.es/es-revista-enfermedades-infecciosas-microbiologia-clinica-28-articulo-identificacion-bacteriana-mediante-secuenciacion-del-13059055>.
+
 ___
 
 ##Parte II

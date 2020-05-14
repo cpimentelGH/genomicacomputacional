@@ -29,7 +29,7 @@ AGAGTTTGATCCTGGCTCAGGATTAACGCTGGCGGCATGCCTAATACATGCAAGTCGATCGGAAGTAGCAATACTTTAGA
 
  El ARN ribosómico 16S (ARNr 16S) es utilizado en estudios de filogenia y taxonomía de bacterias ya que se encuentra altamente conservado, presentado regiones comunes en todos los organismos pero con variaciones en zonas específicas. 
 
-##Fuentes
+##### Fuentes
 
 -Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso Mayo 13 2020].
 

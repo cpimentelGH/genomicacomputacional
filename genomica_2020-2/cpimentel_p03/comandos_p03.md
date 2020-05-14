@@ -37,21 +37,36 @@ TTTATTGGAAGCGCATGTCAAGGATAGCACCGGTGATTGGAGTTAAGTCGTAACAAGGT
 ACCCCTACGAGAACG
 ~~~
 
-1. ¿A qué organismo pertenece?
+	1. ¿A qué organismo pertenece?
 
  *Mycoplasma genitalium*
 
-2. ¿Es un gen o una región genómica de importancia?
+	2. ¿Es un gen o una región genómica de importancia?
 
  Gen ARNr 16S
 
-3. ¿Qué es un marcador molecular?
+	3. ¿Qué es un marcador molecular?
 
  Es un fragmento de DNA polimórfico (con variaciones) que permite distinguir entre diferentes grupos taxonómicos, poblaciones o individuos. Estos marcadores muchas veces son utilizados como estimadores de la historia evolutiva de los organismos ya que se evalúan relaciones filogenéticas en distintos niveles de organización.
 
-4. ¿Cuál es la importancia de este tipo de marcador en particular?
+	4. ¿Cuál es la importancia de este tipo de marcador en particular?
 
  El ARN ribosómico 16S (ARNr 16S) es utilizado en estudios de filogenia y taxonomía de bacterias ya que se encuentra altamente conservado, presentado regiones comunes en todos los organismos pero con variaciones en zonas específicas. 
+
+2. Tabla comparativa programas BLAST
+
+~~~
+| BLAST 	| Definición 	| Aplicación 	|
+|:-------:	|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| blastn 	| Nucleotide Blast. Requiere de un query de nucleótidos para buscarlo en una base de datos de nucleótido mediante un alineamiento de nucleótidos. 	| -Identificación de secuencias de nucleótidos.<br><br>-Comparación intraespecífica de secuencias.<br><br>-Comparación interespecífica de secuencias.<br><br>-Búsqueda de pequeños queries en una comparación interespecífica. 	|
+| blastp 	| Protein Blast. Requiere un query de aminoácidos para buscarlo en una base de datos de proteínas (secuencia de aminoácidos) mediante un alineamiento de aminoácidos. 	| -Identificación de la secuencia general y búsqueda de similitudes. 	|
+| blastx 	| Requiere de un query de nucleótidos que es traducido en una secuencia de aminoácidos y se busca en una base de datos de proteínas (secuencia de aminoácidos) mediante un alineamiento de aminoácidos. 	| -Identificar potenciales productos proteicos codificados por un<br>query de nucleótidos. 	|
+| tblastn 	| Necesita un query de aminoácidos para buscarlo en bases de datos generadas por secuencias de nucleótidos traducidas. Esto es mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de bases de datos que codifican para proteínas similares a la del query. 	|
+| tblastx 	| Se necesita de un query de nucleótidos que se traduce en una secuencia de aminoácidos y se busca en una base de datos generada por secuencias de nucleótidos traducidas en secuencias de aminoácidos mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de nucleótidos similares al query basándose en su potencial de codificación. 	|
+~~~
+
+3. Metodología de Mapeo.
+
 
 ##### Fuentes
 

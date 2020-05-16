@@ -97,11 +97,11 @@ ___
 
  La ruta que recorre los nodos pasando por los ejes recibe el nombre de **Camino Euleriano** y según la teoría propuesta, un camino, podrá pasar sólo una vez por todos los ejes siempre y cuando exista alguna de de estas dos situaciones:
 
- - Hay dos nodos de grado impar, indicando que los restantes tienen un grado par. Por lo tanto, el nodo de de inicio es uno de los nodos de grado impar y el nodo de término es el otro nodo de grado impar.
+ - Hay dos nodos de grado impar, indicando que los restantes tienen un grado par. Por lo tanto, el nodo de inicio es uno de los nodos de grado impar y el nodo de término es el otro nodo de grado impar.
 
  - Se forma un **Circuito Euleriano**; esto quiere decir que todos los nodos tienen un grado par y el nodo de inicio será el mismo que el nodo de término.
 
-***Conclusión:*** Este problema no tiene solución porque tenemos cuatro nodos con grado 3, 5, 3 y 3 respectivamente, por lo que no es posible pasar por todos los puentes sin repetir alguno. La solución es destruir cualquiera de los puentes lo que nos dejaría al menos 2 nodos con grado impar y la solución se daría por la situación 1. 
+**Conclusión:** Este problema no tiene solución porque tenemos cuatro nodos con grado 3, 5, 3 y 3 respectivamente, por lo que no es posible pasar por todos los puentes sin repetir alguno. La solución es destruir cualquiera de los puentes lo que nos dejaría al menos 2 nodos con grado impar y la solución se daría por la situación 1.
 
 2.Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
 

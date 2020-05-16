@@ -88,7 +88,20 @@ ___
 1. Puentes de la Ciudad de Königsberg
 
 1.1 ¿En qué consiste el problema de los puentes de la ciudad de Königsberg?
+
+ La ciudad de Königsberg se encontraba distribuida en cuatro superficies terrestres conectadas por 7 puentes. El problema consiste en encontrar la ruta que le permita a una persona cruzar los siete puentes sin pasar por ellos más de una vez.
+
 1.2 ¿Por qué no tiene solución?
+
+ De acuerdo con lo propuesto por Euler, llamado en ese momento geometría de la posición y ahora recibe el nombre de teoría de grafos. Este razonamiento permite visualizar la Ciudad de Königsberg en **nodos** (las 4 masas terrestres) y **vértices** (los 7 puentes) además de un término que es el **grado** de los nodos (el número de puentes que tienen contacto con esa masa de tierra). 
+
+ La ruta que recorre los nodos pasando por los ejes recibe el nombre de **Camino Euleriano** y según la teoría propuesta, un camino, podrá pasar sólo una vez por todos los ejes siempre y cuando exista alguna de de estas dos situaciones:
+
+ - Hay dos nodos de grado impar, indicando que los restantes tienen un grado par. Por lo tanto, el nodo de de inicio es uno de los nodos de grado impar y el nodo de término es el otro nodo de grado impar.
+
+ - Se forma un **Circuito Euleriano**; esto quiere decir que todos los nodos tienen un grado par y el nodo de inicio será el mismo que el nodo de término.
+
+***Conclusión:*** Este problema no tiene solución porque tenemos cuatro nodos con grado 3, 5, 3 y 3 respectivamente, por lo que no es posible pasar por todos los puentes sin repetir alguno. La solución es destruir cualquiera de los puentes lo que nos dejaría al menos 2 nodos con grado impar y la solución se daría por la situación 1. 
 
 2.Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
 

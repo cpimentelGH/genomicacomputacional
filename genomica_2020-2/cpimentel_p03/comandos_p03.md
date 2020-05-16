@@ -53,7 +53,6 @@ ACCCCTACGAGAACG
 
  El ARN ribosómico 16S (ARNr 16S) es utilizado en estudios de filogenia y taxonomía de bacterias ya que se encuentra altamente conservado, presentado regiones comunes en todos los organismos pero con variaciones en zonas específicas. 
 
-~~~
 2. Tabla comparativa programas BLAST
 
 
@@ -64,7 +63,7 @@ ACCCCTACGAGAACG
 | blastx 	| Requiere de un query de nucleótidos que es traducido en una secuencia de aminoácidos y se busca en una base de datos de proteínas (secuencia de aminoácidos) mediante un alineamiento de aminoácidos. 	| -Identificar potenciales productos proteicos codificados por un<br>query de nucleótidos. 	|
 | tblastn 	| Necesita un query de aminoácidos para buscarlo en bases de datos generadas por secuencias de nucleótidos traducidas. Esto es mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de bases de datos que codifican para proteínas similares a la del query. 	|
 | tblastx 	| Se necesita de un query de nucleótidos que se traduce en una secuencia de aminoácidos y se busca en una base de datos generada por secuencias de nucleótidos traducidas en secuencias de aminoácidos mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de nucleótidos similares al query basándose en su potencial de codificación. 	|
-~~~
+
 
 3. Metodología de Mapeo.
 
@@ -72,7 +71,7 @@ ACCCCTACGAGAACG
 
 [Artículo]: https://www.sciencedirect.com/science/article/pii/S2589004219300896
 
-En este paper se hizo un ensamble *de novo* usando reads a los que se les hicieron correcciones con un software ensamblador basado en k-meros llamado tadpole de bbtools; también se utilizaron librerías generadas para secuenciación en la plataforma Illumina HiSeq (3 de inserción corta y 3 pareadas) y las librerías pareadas de especies cruzadas (se generaron con el software Cross-Species Scaffolding utilizando genoma de beluga). El ensamble *de novo* se generó utilizando el software SOAPdenovo2. Los gaps fueron cerrados con el software Sealer. La continuidad del ensamble fue estimada con el software quast v4.5 y el contenido génico fue estimado con BUSCO (comparación de ortólogos universales de copia única) v3 y la base de datos de genes de mamíferos BUSCO.
+En este paper se hizo un ensamble *de novo* usando reads a los que se les hicieron correcciones con un software ensamblador basado en k-meros llamado tadpole de bbtools; también se utilizaron librerías generadas para secuenciación en la plataforma Illumina HiSeq (3 de inserción corta y 3 mate paired) y las librerías mate paired de especies cruzadas (se generaron con el software Cross-Species Scaffolding utilizando genoma de beluga). El ensamble *de novo* se generó utilizando el software SOAPdenovo2. Los gaps fueron cerrados con el software Sealer. La continuidad del ensamble fue estimada con el software quast v4.5 y el contenido génico fue estimado con BUSCO (comparación de ortólogos universales de copia única) v3 y la base de datos de genes de mamíferos BUSCO.
 
 ##### Fuentes
 
@@ -86,8 +85,22 @@ ___
 
 ## Parte II
 
+1. Puentes de la Ciudad de Königsberg
 
+1.1 ¿En qué consiste el problema de los puentes de la ciudad de Königsberg?
+1.2 ¿Por qué no tiene solución?
 
+2.Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
+
+3.Estadísticas N50 y L50.
+
+3.1 N50
+ - ¿Qué es?
+ - ¿En qué consiste?
+
+3.2 L50
+ - ¿Qué es?
+ - ¿En qué consiste?
 ___
 
 ## Parte III

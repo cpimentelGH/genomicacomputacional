@@ -102,7 +102,7 @@ ___
 
 **Conclusión:** Este problema no tiene solución porque tenemos cuatro nodos con grado 3, 5, 3 y 3 respectivamente, por lo que no es posible pasar por todos los puentes sin repetir alguno. La solución es destruir cualquiera de los puentes lo que nos dejaría al menos 2 nodos con grado impar y la solución se daría por la situación 1.
 
-2.Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
+2. Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
 
  - No hay un algoritmo eficiente para encontrar un ciclo hamiltoniano en un grafo con una cantidad muy grande (millones) de nodos generando una carga computacional poco eficiente de procesar.
 
@@ -110,7 +110,7 @@ ___
 
  - Se considera a los cromosomas como si fueran circulares pero en otros casos son múltiples y lineales por lo que se debe buscar un camino euleriano en lugar de un ciclo euleriano. Pues el nodo en el que inicia no es necesariamente el nodo en el que termina y cada cromosoma tendrá su propio camino euleriano.
 
-3.Estadísticas N50 y L50.
+3. Estadísticas N50 y L50.
 
 3.1 N50
 

@@ -64,7 +64,6 @@ ACCCCTACGAGAACG
 | tblastn 	| Necesita un query de aminoácidos para buscarlo en bases de datos generadas por secuencias de nucleótidos traducidas. Esto es mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de bases de datos que codifican para proteínas similares a la del query. 	|
 | tblastx 	| Se necesita de un query de nucleótidos que se traduce en una secuencia de aminoácidos y se busca en una base de datos generada por secuencias de nucleótidos traducidas en secuencias de aminoácidos mediante un alineamiento de secuencias de aminoácidos. 	| -Identificar secuencias de nucleótidos similares al query basándose en su potencial de codificación. 	|
 
-
 3. Metodología de Mapeo.
 
 [Narwhal Genome Reveals Long-Term Low Genetic Diversity despite Current Large Abundance Size][Artículo]
@@ -73,13 +72,6 @@ ACCCCTACGAGAACG
 
 En este paper se hizo un ensamble *de novo* usando reads a los que se les hicieron correcciones con un software ensamblador basado en k-meros llamado tadpole de bbtools; también se utilizaron librerías generadas para secuenciación en la plataforma Illumina HiSeq (3 de inserción corta y 3 mate paired) y las librerías mate paired de especies cruzadas (se generaron con el software Cross-Species Scaffolding utilizando genoma de beluga). El ensamble *de novo* se generó utilizando el software SOAPdenovo2. Los gaps fueron cerrados con el software Sealer. La continuidad del ensamble fue estimada con el software quast v4.5 y el contenido génico fue estimado con BUSCO (comparación de ortólogos universales de copia única) v3 y la base de datos de genes de mamíferos BUSCO.
 
-##### Fuentes
-
-- del Rosario Rodicio, M. and del Carmen Mendoza, M., 2004. Identificación bacteriana mediante secuenciación del ARNr 16S: fundamento, metodología y aplicaciones en microbiología clínica. Enfermedades Infecciosas y Microbiología Clínica, [en línea] 22(4), pp.238-245. Disponible en: <https://www.elsevier.es/es-revista-enfermedades-infecciosas-microbiologia-clinica-28-articulo-identificacion-bacteriana-mediante-secuenciacion-del-13059055>.
-
-- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso 13 de Mayo del 2020].
-
-- Westbury, M., Petersen, B., Garde, E., Heide-Jørgensen, M. and Lorenzen, E., 2019. Narwhal Genome Reveals Long-Term Low Genetic Diversity despite Current Large Abundance Size. iScience, 15, pp.592-599.
 ___
 
 ## Parte II
@@ -123,14 +115,6 @@ ___
  - ¿Qué es y en qué consiste?
 
  Dado un set de contigs, cada uno con su propia longitud, L50 se define como el menor número de contigs cuya suma de sus longitudes es igual a la mitad del tamaño del genoma.  
-
-#### Fuentes
-
-- En.wikipedia.org. s.f. N50, L50, And Related Statistics. [en línea] Disponible en: <https://en.wikipedia.org/wiki/N50,_L50,_and_related_statistics> [Fecha de acceso 15 de Mayo del 2020].
-
-- TED-Ed, 2016. How The Königsberg Bridge Problem Changed Mathematics - Dan Van Der Vieren. [video] Disponible en: <https://www.youtube.com/watch?v=nZwSo4vfw6c> [Fecha de acceso 15 de Mayo del 2020].
-
-- Compeau, P., Pevzner, P. and Tesler, G., 2011. How to apply de Bruijn graphs to genome assembly. Nature Biotechnology, 29(11), pp.987-991.
 ___
 
 ## Parte III
@@ -138,4 +122,22 @@ ___
 ___
 
 ## Parte IV
+
+___
+
+#### Fuentes
+
+- 2019. BLAST Homepage And Selected Search Pages. [PDF] NCBI Handout Series, p.2. Available at: <http://ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_BLASTGuide.pdf> [Fecha de acceso 13 de Mayo del 2020].
+
+- En.wikipedia.org. s.f. N50, L50, And Related Statistics. [en línea] Disponible en: <https://en.wikipedia.org/wiki/N50,_L50,_and_related_statistics> [Fecha de acceso 15 de Mayo del 2020].
+
+- TED-Ed, 2016. How The Königsberg Bridge Problem Changed Mathematics - Dan Van Der Vieren. [video] Disponible en: <https://www.youtube.com/watch?v=nZwSo4vfw6c> [Fecha de acceso 15 de Mayo del 2020].
+
+- Compeau, P., Pevzner, P. and Tesler, G., 2011. How to apply de Bruijn graphs to genome assembly. Nature Biotechnology, 29(11), pp.987-991.
+
+- del Rosario Rodicio, M. and del Carmen Mendoza, M., 2004. Identificación bacteriana mediante secuenciación del ARNr 16S: fundamento, metodología y aplicaciones en microbiología clínica. Enfermedades Infecciosas y Microbiología Clínica, [en línea] 22(4), pp.238-245. Disponible en: <https://www.elsevier.es/es-revista-enfermedades-infecciosas-microbiologia-clinica-28-articulo-identificacion-bacteriana-mediante-secuenciacion-del-13059055>.
+
+- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso 13 de Mayo del 2020].
+
+- Westbury, M., Petersen, B., Garde, E., Heide-Jørgensen, M. and Lorenzen, E., 2019. Narwhal Genome Reveals Long-Term Low Genetic Diversity despite Current Large Abundance Size. iScience, 15, pp.592-599.
 	

@@ -75,10 +75,9 @@ En este paper se hizo un ensamble *de novo* usando reads a los que se les hicier
 
 ##### Fuentes
 
-- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso 13 de Mayo del 2020].
-
 - del Rosario Rodicio, M. and del Carmen Mendoza, M., 2004. Identificación bacteriana mediante secuenciación del ARNr 16S: fundamento, metodología y aplicaciones en microbiología clínica. Enfermedades Infecciosas y Microbiología Clínica, [en línea] 22(4), pp.238-245. Disponible en: <https://www.elsevier.es/es-revista-enfermedades-infecciosas-microbiologia-clinica-28-articulo-identificacion-bacteriana-mediante-secuenciacion-del-13059055>.
 
+- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso 13 de Mayo del 2020].
 
 - Westbury, M., Petersen, B., Garde, E., Heide-Jørgensen, M. and Lorenzen, E., 2019. Narwhal Genome Reveals Long-Term Low Genetic Diversity despite Current Large Abundance Size. iScience, 15, pp.592-599.
 ___
@@ -111,21 +110,27 @@ ___
 
  - Se considera a los cromosomas como si fueran circulares pero en otros casos son múltiples y lineales por lo que se debe buscar un camino euleriano en lugar de un ciclo euleriano. Pues el nodo en el que inicia no es necesariamente el nodo en el que termina y cada cromosoma tendrá su propio camino euleriano.
 
+3.Estadísticas N50 y L50.
+
+3.1 N50
+
+ - ¿Qué es y en qué consiste?
+
+ Dado un set de contigs, el N50 se define como la longitud de la secuencia del contig más pequeño en el 50% de la longitud total del genoma. Es una mediana ponderada de tal forma que el 50% del ensamble completo está contenido en contigs o scaffolds de igual o mayor longitud que este valor.
+ 
+3.2 L50
+
+ - ¿Qué es y en qué consiste?
+
+ Dado un set de contigs, cada uno con su propia longitud, L50 se define como el menor número de contigs cuya suma de sus longitudes es igual a la mitad del tamaño del genoma.  
+
 #### Fuentes
+
+- En.wikipedia.org. s.f. N50, L50, And Related Statistics. [en línea] Disponible en: <https://en.wikipedia.org/wiki/N50,_L50,_and_related_statistics> [Fecha de acceso 15 de Mayo del 2020].
 
 - TED-Ed, 2016. How The Königsberg Bridge Problem Changed Mathematics - Dan Van Der Vieren. [video] Disponible en: <https://www.youtube.com/watch?v=nZwSo4vfw6c> [Fecha de acceso 15 de Mayo del 2020].
 
 - Compeau, P., Pevzner, P. and Tesler, G., 2011. How to apply de Bruijn graphs to genome assembly. Nature Biotechnology, 29(11), pp.987-991.
-
-3.Estadísticas N50 y L50.
-
-3.1 N50
- - ¿Qué es?
- - ¿En qué consiste?
-
-3.2 L50
- - ¿Qué es?
- - ¿En qué consiste?
 ___
 
 ## Parte III

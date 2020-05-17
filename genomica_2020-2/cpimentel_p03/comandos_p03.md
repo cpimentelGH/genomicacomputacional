@@ -75,7 +75,7 @@ En este paper se hizo un ensamble *de novo* usando reads a los que se les hicier
 
 ##### Fuentes
 
-- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso Mayo 13 2020].
+- Ríos, E., Mejía-Ruiz, C. and Álvarez-Castañeda, S., 2009. Marcadores Moleculares: Una Revolución en la Zoología. CIENCIA, [en línea] pp.5-13. Disponible en: <http://revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf> [Fecha de acceso 13 de Mayo del 2020].
 
 - del Rosario Rodicio, M. and del Carmen Mendoza, M., 2004. Identificación bacteriana mediante secuenciación del ARNr 16S: fundamento, metodología y aplicaciones en microbiología clínica. Enfermedades Infecciosas y Microbiología Clínica, [en línea] 22(4), pp.238-245. Disponible en: <https://www.elsevier.es/es-revista-enfermedades-infecciosas-microbiologia-clinica-28-articulo-identificacion-bacteriana-mediante-secuenciacion-del-13059055>.
 
@@ -104,6 +104,18 @@ ___
 **Conclusión:** Este problema no tiene solución porque tenemos cuatro nodos con grado 3, 5, 3 y 3 respectivamente, por lo que no es posible pasar por todos los puentes sin repetir alguno. La solución es destruir cualquiera de los puentes lo que nos dejaría al menos 2 nodos con grado impar y la solución se daría por la situación 1.
 
 2.Problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.
+
+ - No hay un algoritmo eficiente para encontrar un ciclo hamiltoniano en un grafo con una cantidad muy grande (millones) de nodos generando una carga computacional poco eficiente de procesar.
+
+ - Los errores en los reads generan bultos en los grafos de Bruijin y complican el ensamblaje. 
+
+ - Se considera a los cromosomas como si fueran circulares pero en otros casos son múltiples y lineales por lo que se debe buscar un camino euleriano en lugar de un ciclo euleriano. Pues el nodo en el que inicia no es necesariamente el nodo en el que termina y cada cromosoma tendrá su propio camino euleriano.
+
+#### Fuentes
+
+- TED-Ed, 2016. How The Königsberg Bridge Problem Changed Mathematics - Dan Van Der Vieren. [video] Disponible en: <https://www.youtube.com/watch?v=nZwSo4vfw6c> [Fecha de acceso 15 de Mayo del 2020].
+
+- Compeau, P., Pevzner, P. and Tesler, G., 2011. How to apply de Bruijn graphs to genome assembly. Nature Biotechnology, 29(11), pp.987-991.
 
 3.Estadísticas N50 y L50.
 

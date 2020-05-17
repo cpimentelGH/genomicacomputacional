@@ -127,7 +127,7 @@ ___
 
 #### Fuentes
 
-- 2019. BLAST Homepage And Selected Search Pages. [PDF] NCBI Handout Series, p.2. Available at: <http://ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_BLASTGuide.pdf> [Fecha de acceso 13 de Mayo del 2020].
+- S.A.2019. BLAST Homepage And Selected Search Pages. [PDF] NCBI Handout Series, p.2. Available at: <http://ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_BLASTGuide.pdf> [Fecha de acceso 13 de Mayo del 2020].
 
 - En.wikipedia.org. s.f. N50, L50, And Related Statistics. [en línea] Disponible en: <https://en.wikipedia.org/wiki/N50,_L50,_and_related_statistics> [Fecha de acceso 15 de Mayo del 2020].
 
